@@ -5,5 +5,12 @@
 ; n/3 + 2
 (define (f n)
   (+ (/ n 3) 2)) ;All of the definitions have been successfully evaluated. --;
-; 1 n^2 + 10
-(
+; 1. n^2 + 10
+(define (f1 n)
+  (+ (expt n 2) 10))
+; 2. 1/2 * n^2 + 20
+(define (f2 n)
+  (+ (* (/ 1 2) (expt n 2)) 20))
+; 3. 2 - 1/n
+(define (f3 n)
+  (- 2 (/ 1 n)))
